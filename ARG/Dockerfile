@@ -3,6 +3,6 @@ ENV course="DEVOPS WITH AWS"\
 trainer="SIVAKUMAR REDDY"\
 duration="120HS"
 ARG USERNAME="SIVAKUMAR REDDY"
-RUN echo "Hello user: ${trainer}"
+RUN echo "Hello user: ${USERNAME}"
 CMD ["sleep", "100"]
  
