@@ -1,6 +1,6 @@
 FROM almalinux:9
 RUN dnf install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
-# this executed, when any user uses your image as your base os.
+# this executes if any user uses your image as their base OS
 ONBUILD COPY index.html /usr/share/nginx/html/index.html
-CMD ["nginix", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
